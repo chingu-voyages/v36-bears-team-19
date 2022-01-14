@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { darkTheme, GlobalStyles } from "./theme";
+
+import Landing from "./components/views/Landing";
+import Login from "./components/views/Login";
+import Nearby from "./components/views/Nearby";
+import Profile from "./components/views/Profile";
+import Search from "./components/views/Search";
+import Signup from "./components/views/Signup";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <GlobalStyles />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Nearby" element={<Nearby />} />
+        <Route path="/Profile" element={<Profile />} />
+        <Route path="/Search" element={<Search />} />
+        <Route path="/Signup" element={<Signup />} />
+      </Routes>
+    </ThemeProvider>
   );
 }
 
