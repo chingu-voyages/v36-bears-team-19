@@ -17,4 +17,5 @@ export const darkTheme = {
   text: "white",
   buttonGradient:
     "radial-gradient(77.98% 5211.56% at 37% 100%, #FE930A 0%, #FF6139 77.12%)",
+  borderColor: "#F27405",
 };
