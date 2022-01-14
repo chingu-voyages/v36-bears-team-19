@@ -15,6 +15,6 @@ body {
 export const darkTheme = {
   body: "#011126",
   text: "white",
-  orangeGradient:
+  buttonGradient:
     "radial-gradient(77.98% 5211.56% at 37% 100%, #FE930A 0%, #FF6139 77.12%)",
 };
