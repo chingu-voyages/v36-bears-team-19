@@ -62,7 +62,7 @@ export default function Signup() {
           />
           <TextInput
             label="Confirm Email"
-            name="confirm-email"
+            name="confirmEmail"
             type="email"
             placeholder=""
           />
@@ -75,7 +75,7 @@ export default function Signup() {
           <TextInput
             label="Confirm Password"
             type="password"
-            name="confirm-password"
+            name="confirmPassword"
             placeholder=""
           />
 
